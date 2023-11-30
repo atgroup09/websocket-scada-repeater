@@ -1,0 +1,54 @@
+﻿REQUIREMENTS
+============
+Qt5Core
+    + libqt5core5 libqt5core5-dev
+
+Qt5WebSockets
+    + libqt5websockets5 libqt5websockets5-dev
+
+
+INSTALL
+=======
+
+On Windows:
+   
+    1. qmake
+    2. make
+    or
+    over Qt Creator
+
+On Linux/Unix:
+
+    1. make qtservice
+    1.1 cd lib/qtservice
+    1.2 qmake
+    1.3 make
+    1.4 cd ../../
+
+    2. qmake
+    3. make
+
+
+RUN
+===
+
+server --config PathToConfigFile [ --sname ServiceName --sdesc ServiceDescription ]
+     
+where, PathToConfigFile - path to main config
+            ServiceName - service name (optional)
+     ServiceDescription - service description (optional)
+
+
+On Windows:
+
+    1. modify script for-win/sc-install.bat
+    2. execute for-win/sc-install.bat
+       * see Windows Service to Start | Stop
+
+On Linux:
+
+    1. modify file for-unix/wsrepeaterd.service
+    2. sudo cp for-unix/wsrepeaterd.service /etc/systemd/system
+    3. systemctl enable wsrepeaterd
+    4. systemctl start wsrepeaterd
+       * start | status | stop

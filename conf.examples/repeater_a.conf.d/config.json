@@ -1,0 +1,10 @@
+{ "ID":"WsRepeaterA",
+  "Port":8100,
+  "ConnMax":30,
+  "ConnPerCli":3,
+  "ConnLifeTime":28800,
+  "UseLog":1,
+  "WsRepeater":"ws://at09.ddns.net:8200",
+  "Black":"D:\\server\\ws\\repeater_a.cond.d\\wsblack.json",
+  "Log":"D:\\server\\ws\\repeater_a.log"
+}

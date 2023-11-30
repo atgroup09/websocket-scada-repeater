@@ -1,0 +1,9 @@
+{ "ID":"WsRepeaterB",
+  "Port":8200,
+  "ConnMax":30,
+  "ConnPerCli":3,
+  "ConnLifeTime":28800,
+  "UseLog":1,
+  "Black":"/opt/ws/repeater_b.cond.d/wsblack.json",
+  "Log":"/opt/ws/repeater_b.log"
+}

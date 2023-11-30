@@ -1,0 +1,13 @@
+[Unit]
+Description=wsrepeater
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/wsrepeater --config /usr/local/etc/wsrepeater.conf.d/__config.json --sname WsRepeater --sdesc WsRepeaterServer
+User=pi
+Group=pi
+StandardOutput=syslog
+
+[Install]
+WantedBy=multi-user.target
