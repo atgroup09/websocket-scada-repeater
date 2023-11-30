@@ -24,6 +24,8 @@ config.json
 }
 ````
 
+| Field | Description | Type | Range |
+| --- | --- | --- | --- |
 | "ID" | ID for this WebSocket Server / Repeater | STRING |  |
 | "Port" | shared net-port for this WebSocket Server / Repeater | NUMBER |  |
 | "ConnMax" | maximum number of connections (ws-clients) for this server | NUMBER | 0...250 |
