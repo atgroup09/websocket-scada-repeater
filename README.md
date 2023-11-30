@@ -1,5 +1,7 @@
 # WebSocket Server / Repeater
 
+See [Releases](https://github.com/atgroup09/websocket-scada-repeater/releases) to download build version.
+
 - Configuration (examples)
 - Documentation
 - Source code
